@@ -13,10 +13,10 @@ base=${bin_abs_path}/..
 export LANG=en_US.UTF-8
 export BASE=$base
 
-if [ -f $base/bin/adapter.pid ] ; then
-	echo "found adapter.pid , Please run stop.sh first ,then startup.sh" 2>&2
-    exit 1
-fi
+# if [ -f $base/bin/adapter.pid ] ; then
+# 	echo "found adapter.pid , Please run stop.sh first ,then startup.sh" 2>&2
+#     exit 1
+# fi
 
 if [ ! -d $base/logs ] ; then
 	mkdir -p $base/logs
